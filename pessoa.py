@@ -3,6 +3,9 @@ class Pessoa():
         self.nome = nome
         self.idade = idade
         self.cpf = cpf
+    
+    def comer(self):
+        return f"{self.nome} está comendo!"
 
 if __name__ == "__main__":
     pessoa1 = Pessoa("João", 33, "12345678-90")
@@ -15,3 +18,6 @@ print("CPF:",pessoa1.cpf)
 print("nome:",pessoa2.nome)
 print("idade:",pessoa2.idade)
 print("CPF:",pessoa2.cpf)
+
+print(pessoa1.comer())
+print(pessoa2.comer())
